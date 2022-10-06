@@ -37,7 +37,7 @@ There are two main functions that we used to generate simulation runs. The first
 6. Run a Cox model
 7. Calculate bias, coverage, power, event rate (right and interval censored components, and overall)
 
-To conduct a simulation over multiple runs, we suggest using the rowMeans function combined with the replicate function (see example in the code files).
+The follow-up time could be adjusted by editing the simRun1 and simRun2 functions where t is generated from a uniform(3,5) random variable. This could be adjusted to any number of follow-up years or visits. To conduct a simulation over multiple runs, we suggest using the rowMeans function combined with the replicate function (see example in the code files).
 
 The trickiest part of this is figuring out values for the shape and scale parameters within the Weibull distributions to achieve the desired event rate overall and the proportions of events arising from each of the right and interval censored components. Here is a nice website with some guidance as a starting point: https://www.r-bloggers.com/2022/02/simulating-survival-outcomes-setting-the-parameters-for-the-desired-distribution/. In our simulation run functions, these parameters are denoted by:
 * lambda_right: shape parameter for the Weibull distribution for the right censored component (based on the simSurv function/package, see https://cran.r-project.org/web/packages/simsurv/vignettes/simsurv_usage.html for more details about parameter setting)
