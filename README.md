@@ -16,3 +16,14 @@ Abstract: Composite time-to-event endpoints are beneficial for assessing related
 * data simulation midpt analysis: provides functions for simulating data that use the midpoint of the interval censored component in the composite outcome and aggregating results for different scenarios across the simulation runs
 * data simulation upper value analysis: provides functions for simulating data that use the upper value of the interval censored component in the composite outcome and aggregating results for different scenarios across the simulation runs
 * comparing midpt and upper results: provides code that reads in results files for the different scenarios and produces Bland Altman plots to compare the differences between use of midpoint of the interval versus use of the upper value of the interval in the calculation for the composite outcome
+
+## Instructions for using code files for generating new simulated scenarios
+
+This section contains some useful guidance for conducting a simulation study for new scenarios. 
+
+The some parameters that may be adjusted include:
+* n: the sample size of the clinical trial
+* beta_right: the coefficient for the treatment indicator for the right censored outcome
+* beta_int: the coefficient for the treatment indicator for the interval censored outcome
+The sample size should be adjusted based on the planned enrollment for the clinical trial, whereas the beta coefficeints should be designated based on previous studies or hyptheses about the strength of association between the treatment and outcome. 
+
