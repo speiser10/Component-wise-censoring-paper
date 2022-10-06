@@ -25,5 +25,18 @@ The some parameters that may be adjusted include:
 * n: the sample size of the clinical trial
 * beta_right: the coefficient for the treatment indicator for the right censored outcome
 * beta_int: the coefficient for the treatment indicator for the interval censored outcome
+
 The sample size should be adjusted based on the planned enrollment for the clinical trial, whereas the beta coefficeints should be designated based on previous studies or hyptheses about the strength of association between the treatment and outcome. 
+
+There are two main functions that we used to generate simulation runs. The first is simRun1, which uses the upper value of the interval censored component within the composite outcome. The second is simRun2, which uses the midpoint of the interval censored component within the composite outcome. The simulation run algorithm is described in the paper, but briefly is as follows:
+1. Generate a treatment indicator
+2. Generate the followup time from a uniform distribution between 3-5 (so from 3-5 years in our example)
+3. Generate the right censored time to event and censoring indicator
+4. Generate the interval censored time to event and censoring indicator
+5. Derive the composite outcome based on the first event that occurs between the right and interval censored components
+6. Run a Cox model
+7. Calculate bias, coverage, power, event rate (right and interval censored components, and overall)
+
+To conduct a simulation over multiple runs, we suggest using the rowMeans function combined with the replicate function (see example in the code files).
+
 
