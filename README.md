@@ -21,7 +21,7 @@ Abstract: Composite time-to-event endpoints are beneficial for assessing related
 
 This section contains some useful guidance for conducting a simulation study for new scenarios. 
 
-The some parameters that may be adjusted include:
+Some parameters that may be adjusted include:
 * n: the sample size of the clinical trial
 * beta_right: the coefficient for the treatment indicator for the right censored outcome
 * beta_int: the coefficient for the treatment indicator for the interval censored outcome
