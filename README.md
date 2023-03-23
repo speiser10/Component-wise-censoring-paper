@@ -4,7 +4,7 @@ Data simulation and analysis for assessing performance of Cox models for composi
 Title: Performance of Cox regression models for composite time-to-event endpoints with component-wise censoring in randomized trials 
 
 Authors: Authors: Speiser, Jaime Lynn; Ambrosius, Walter T; Pajewski, Nicholas M.
-Department of Biostatistics and Data Science, Wake Forest School of Medicine, Winston-Salem, NC, USA.
+Department of Biostatistics and Data Science, Wake Forest University School of Medicine, Winston-Salem, NC, USA.
 
 Funding: National Institute on Aging, PRagmatic EValuation of evENTs And Benefits of Lipid-lowering in oldEr adults (PREVENTABLE) trial, Grant number: U19 AG065188. Wake Forest Older Americans Independence Center, Grant Number: P30 AG021332.
 
