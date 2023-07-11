@@ -1,5 +1,9 @@
 # Component-wise censoring paper
-Data simulation and analysis for assessing performance of Cox models for composite endpoints with component-wise censoring, paper currently under review. 
+Data simulation and analysis for assessing performance of Cox models for composite endpoints with component-wise censoring
+
+Journal: Clinical Trials 
+
+Paper link: https://doi.org/10.1177/17407745231177046
 
 Title: Performance of Cox regression models for composite time-to-event endpoints with component-wise censoring in randomized trials 
 
